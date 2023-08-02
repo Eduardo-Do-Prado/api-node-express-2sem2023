@@ -1,0 +1,22 @@
+{
+  "name": "api-node-express-2sem2023",
+  "version": "1.0.0",
+  "description": "Teste de api node express",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "api",
+    "javascript",
+    "node",
+    "express",
+    "restfull"
+  ],
+  "author": "Eduardo Luiz",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
