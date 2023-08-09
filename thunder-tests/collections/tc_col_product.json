@@ -28,9 +28,14 @@
             "method": "POST",
             "sortNum": 20000,
             "created": "2023-08-09T00:23:48.278Z",
-            "modified": "2023-08-09T00:23:48.278Z",
+            "modified": "2023-08-09T01:17:17.520Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"nome\": \"dsdsa\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {
@@ -42,9 +47,14 @@
             "method": "PUT",
             "sortNum": 30000,
             "created": "2023-08-09T00:24:06.246Z",
-            "modified": "2023-08-09T00:24:06.246Z",
+            "modified": "2023-08-09T01:17:28.640Z",
             "headers": [],
             "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n \"nome\": \"dsdsa\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {

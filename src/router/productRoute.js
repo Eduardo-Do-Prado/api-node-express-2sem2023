@@ -4,39 +4,36 @@ const router = express.Router()
 
 router.get('/', (req, res) => {
     const product = [
-        { id: 2, nameP: "Chuteira"},
-        { id: 1, nameP: "Luva"},
-        { id: 3, nameP: "Capacete"},
+        { id: 2, nomeP: "Chuteira" },
+        { id: 1, nomeP: "Luva" },
+        { id: 3, nomeP: "Capacete" },
     ]
     res.json(product)
 })
 
-
 router.post('/', (req, res) => {
-    const product = [
-        { id: 2, nameP: "Chuteira"},
-        { id: 1, nameP: "Luva"},
-        { id: 3, nameP: "Capacete"},
-    ]
-    //res.json(product)
-    res.json({ message: "Usuário criado com sucesso" })
+    const dados = req.body
+
+    res.json({
+        dados: dados,
+        message: "Usuário criado com sucesso"
+    })
 })
 
 router.put('/', (req, res) => {
-    const product = [
-        { id: 2, nameP: "Chuteira"},
-        { id: 1, nameP: "Luva"},
-        { id: 3, nameP: "Capacete"},
-    ]
-    //res.json(product)
-    res.json({ message: "Usuário atualizado com sucesso" })
+    const dados = req.body
+
+    res.json({
+        dados: dados,
+        message: "Usuário atualizado com sucesso"
+    })
 })
 
 router.delete('/', (req, res) => {
     const product = [
-        { id: 2, nameP: "Chuteira"},
-        { id: 1, nameP: "Luva"},
-        { id: 3, nameP: "Capacete"},
+        { id: 2, nomeP: "Chuteira" },
+        { id: 1, nomeP: "Luva" },
+        { id: 3, nomeP: "Capacete" },
     ]
     //res.json(product)
     res.json({ message: "Usuário deletado com sucesso" })
