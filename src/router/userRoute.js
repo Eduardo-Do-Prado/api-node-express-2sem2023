@@ -30,13 +30,12 @@ router.put('/', (req, res) => {
 })
 
 router.delete('/', (req, res) => {
-    const user = [
-        { id: 1, nome: "Eduardo" },
-        { id: 2, nome: "Luiz" },
-        { id: 3, nome: "Duds" },
-    ]
-    //res.json(user)
-    res.json({ message: "Usuário deletado com sucesso" })
+    const dados = req.body
+
+    res.json({
+        dados: dados,
+        message: "Usuário deletado com sucesso" 
+    })
 })
 
 
