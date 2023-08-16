@@ -1,42 +1,21 @@
 import express from 'express'
+import listUsers from  '../controllers/user/listUsers.js'
+import getUser from  '../controllers/user/getUser.js'
+import postUser from  '../controllers/user/postUser.js'
+import putUser from  '../controllers/user/putUser.js'
+import deleteUser from  '../controllers/user/deleteUser.js'
 
 const router = express.Router()
 
-router.get('/', (req, res) => {
-    const user = [
-        { id: 1, nome: "Eduardo" },
-        { id: 2, nome: "Luiz" },
-        { id: 3, nome: "Duds" },
-    ]
-    res.json(user)
-})
+router.get('/', getUser)
 
-router.post('/', (req, res) => {
-    const dados = req.body
+router.get('/list', listUsers)
 
-    res.json({
-        dados: dados,
-        message: "Usuário criado com sucesso",
-    })
-})
+router.post('/', postUser)
 
-router.put('/', (req, res) => {
-    const dados = req.body
+router.put('/', putUser)
 
-    res.json({
-        dados: dados,
-        message: "Usuário atualizado com sucesso"
-    })
-})
-
-router.delete('/', (req, res) => {
-    const dados = req.body
-
-    res.json({
-        dados: dados,
-        message: "Usuário deletado com sucesso" 
-    })
-})
+router.delete('/', deleteUser)
 
 
 export default router
